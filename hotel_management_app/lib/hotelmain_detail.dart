@@ -36,7 +36,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Welcome to Canola Hotel !",
+                "Welcome to Kanola Hotel !",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 26.0,
@@ -44,7 +44,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: 20.0,
               ),
               Text(
                 "Your Hotel Features",
@@ -55,7 +55,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 30.0,
               ),
               Material(
                 elevation: 10.0,
@@ -75,7 +75,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                 ),
               ),
               SizedBox(
-                height: 30.0,
+                height: 40.0,
               ),
               DefaultTabController(
                 length: 4,
@@ -102,7 +102,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                       ],
                     ),
                     SizedBox(
-                      height: 20.0,
+                      height: 30.0,
                     ),
                     Container(
                       height: 300.0,
@@ -115,12 +115,12 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                                 hotelgallery(
                                     "https://www.ticasino.com/uploads/_800xAUTO_crop_center-center_none/Hotel_Double_Queen_1200X800.jpg",
                                     "Deluxe Room",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     3),
                                 hotelgallery(
-                                    "https://rhotelgeelong.com.au/wp-content/uploads/2021/03/R-Hotel-Geelong-Hotel-Room-11.jpg",
+                                    "https://www.disneytouristblog.com/wp-content/uploads/2013/10/Disneyland-Hotel-0768.jpg",
                                     "Executive Room",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     3),
                                 // Add more rooms here
                               ],
@@ -131,14 +131,14 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 hotelgallery(
-                                    "https://image.wedmegood.com/resized/540X/uploads/member/1333748/1598432237_Capture.JPG",
+                                    "https://www.yamu.lk/wp-content/uploads/2023/07/2-12-1024x480.jpg",
                                     "Indoor Hall",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     4),
                                 hotelgallery(
                                     "https://floralife.com/wp-content/uploads/2022/05/Floral-Management_Outdoor-event-1020X600.png",
                                     "Outdoor Hall",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     4),
 
                                 // Add more wedding halls here
@@ -152,12 +152,12 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                                 hotelgallery(
                                     "https://qtxasset.com/quartz/qcloud1/media/image/hotelmanagement/1515166502/garnish.jpg?VersionId=hS4LkdtaL.f5Xp3Im8bJHJl4UAGSqWf_",
                                     "Chinese Foods",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     3),
                                 hotelgallery(
                                     "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/11/08183440/081117_GrillMill_02.jpg",
                                     "Gourmet Dinner",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     4),
                                 // Add more food options here
                               ],
@@ -170,12 +170,12 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                                 hotelgallery(
                                     "https://b772872.smushcdn.com/772872/wp-content/uploads/2021/03/Hotel2-1000x660.jpg?lossy=1&strip=1&webp=1",
                                     "Reseption",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     3),
                                 hotelgallery(
                                     "https://dexauc1l0pcnj.cloudfront.net/Content/images/blog/how-to-effectively-manage-your-hotel-staff.jpg",
                                     "Waiter",
-                                    "Canola Hotel",
+                                    "Kanola Hotel",
                                     3),
                                 // Add more rooms here
                               ],
@@ -187,13 +187,15 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                   ],
                 ),
               ),
+              
             ],
           ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        unselectedItemColor: Color.fromARGB(255, 8, 1, 70),
-        selectedItemColor: Color.fromARGB(255, 7, 60, 204),
+        backgroundColor: Color.fromARGB(255, 190, 218, 241),
+        unselectedItemColor: Color.fromARGB(255, 17, 10, 90),
+        selectedItemColor: Color.fromARGB(255, 19, 159, 214),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
