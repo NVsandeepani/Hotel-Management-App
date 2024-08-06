@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_management_app/hotel_details.dart';
 
+
 class HotelMainDetails extends StatefulWidget {
   const HotelMainDetails({super.key});
 
@@ -96,7 +97,7 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                         Tab(
                           text: "Foods",
                         ),
-                         Tab(
+                        Tab(
                           text: "Staff",
                         ),
                       ],
@@ -112,16 +113,21 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                hotelgallery(
-                                    "https://www.ticasino.com/uploads/_800xAUTO_crop_center-center_none/Hotel_Double_Queen_1200X800.jpg",
-                                    "Deluxe Room",
-                                    "Kanola Hotel",
-                                    3),
-                                hotelgallery(
-                                    "https://www.disneytouristblog.com/wp-content/uploads/2013/10/Disneyland-Hotel-0768.jpg",
-                                    "Executive Room",
-                                    "Kanola Hotel",
-                                    3),
+                                hotelGallery(
+                                  context,
+                                  "https://www.ticasino.com/uploads/_800xAUTO_crop_center-center_none/Hotel_Double_Queen_1200X800.jpg",
+                                  "Deluxe Room",
+                                  "Kanola Hotel",
+                                  3,"one day : RS 5000.00 ",
+                                ),
+                                hotelGallery(
+                                  context,
+                                  "https://www.disneytouristblog.com/wp-content/uploads/2013/10/Disneyland-Hotel-0768.jpg",
+                                  "Executive Room",
+                                  "Kanola Hotel",
+                                  3, 
+                                  "one day : RS 7000.00 ",
+                                ),
                                 // Add more rooms here
                               ],
                             ),
@@ -130,17 +136,22 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                hotelgallery(
-                                    "https://www.yamu.lk/wp-content/uploads/2023/07/2-12-1024x480.jpg",
-                                    "Indoor Hall",
-                                    "Kanola Hotel",
-                                    4),
-                                hotelgallery(
-                                    "https://floralife.com/wp-content/uploads/2022/05/Floral-Management_Outdoor-event-1020X600.png",
-                                    "Outdoor Hall",
-                                    "Kanola Hotel",
-                                    4),
-
+                                hotelGallery(
+                                  context,
+                                  "https://www.yamu.lk/wp-content/uploads/2023/07/2-12-1024x480.jpg",
+                                  "Indoor Hall",
+                                  "Kanola Hotel",
+                                  4,
+                                  "8hours : RS 5 000 000.00 ",
+                                ),
+                                hotelGallery(
+                                  context,
+                                  "https://floralife.com/wp-content/uploads/2022/05/Floral-Management_Outdoor-event-1020X600.png",
+                                  "Outdoor Hall",
+                                  "Kanola Hotel",
+                                  4,
+                                  "8 hours : RS 500 000.00 ",
+                                ),
                                 // Add more wedding halls here
                               ],
                             ),
@@ -149,16 +160,22 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                hotelgallery(
-                                    "https://qtxasset.com/quartz/qcloud1/media/image/hotelmanagement/1515166502/garnish.jpg?VersionId=hS4LkdtaL.f5Xp3Im8bJHJl4UAGSqWf_",
-                                    "Chinese Foods",
-                                    "Kanola Hotel",
-                                    3),
-                                hotelgallery(
-                                    "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/11/08183440/081117_GrillMill_02.jpg",
-                                    "Gourmet Dinner",
-                                    "Kanola Hotel",
-                                    4),
+                                hotelGallery(
+                                  context,
+                                  "https://qtxasset.com/quartz/qcloud1/media/image/hotelmanagement/1515166502/garnish.jpg?VersionId=hS4LkdtaL.f5Xp3Im8bJHJl4UAGSqWf_",
+                                  "Chinese Foods",
+                                  "Kanola Hotel",
+                                  3,
+                                  "Rs. 700.00",
+                                ),
+                                hotelGallery(
+                                  context,
+                                  "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/11/08183440/081117_GrillMill_02.jpg",
+                                  "Gourmet Dinner",
+                                  "Kanola Hotel",
+                                  4,
+                                   "Rs. 700.00",
+                                ),
                                 // Add more food options here
                               ],
                             ),
@@ -167,27 +184,32 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                hotelgallery(
-                                    "https://b772872.smushcdn.com/772872/wp-content/uploads/2021/03/Hotel2-1000x660.jpg?lossy=1&strip=1&webp=1",
-                                    "Reseption",
-                                    "Kanola Hotel",
-                                    3),
-                                hotelgallery(
-                                    "https://dexauc1l0pcnj.cloudfront.net/Content/images/blog/how-to-effectively-manage-your-hotel-staff.jpg",
-                                    "Waiter",
-                                    "Kanola Hotel",
-                                    3),
-                                // Add more rooms here
+                                hotelGallery(
+                                  context,
+                                  "https://b772872.smushcdn.com/772872/wp-content/uploads/2021/03/Hotel2-1000x660.jpg?lossy=1&strip=1&webp=1",
+                                  "Reception",
+                                  "Kanola Hotel",
+                                  3,
+                                   "24hour Custormer Service",
+                                ),
+                                hotelGallery(
+                                  context,
+                                  "https://dexauc1l0pcnj.cloudfront.net/Content/images/blog/how-to-effectively-manage-your-hotel-staff.jpg",
+                                  "Waiter",
+                                  "Kanola Hotel",
+                                  3,
+                                  "24hour Custormer Service",
+                                ),
+                                // Add more staff here
                               ],
                             ),
                           ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
-              
             ],
           ),
         ),
@@ -203,13 +225,12 @@ class _HotelMainDetailsState extends State<HotelMainDetails> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark),
-            label: "BookMark",
+            label: "Bookmark",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on),
             label: "Destination",
           ),
-        
         ],
       ),
     );
